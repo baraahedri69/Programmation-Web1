@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="nom">nom</label>
+            <input type="text" placeholder="saisir votre nom" required id="nom">
+            <small class="error"></small>
+        </div>
+        <div>
+            <label for="prenom">prenom</label>
+            <input type="text" placeholder="siasir votre prenom" required id="prenom">
+            <small class="error"></small>
+        </div>
+        <div>
+            <label for="">sexe</label>
+            <input type="radio" id="H" name="sexe">
+            <label for="H">H</label>
+            <input type="radio" id="F" name="sexe">
+            <label for="F">F</label>
+            <small class="error"></small>
+        </div>
+        <div>
+            <label for="emploi">sans emploi</label>
+            <input type="checkbox" name="" id="emploi">
+        </div>
+        <div>
+            <label for="dateN">Date de naissance</label>
+            <input type="date" name="" id="dateN">
+            <small class="error"></small>
+        </div>
+        <div>
+            <label for="ville">ville</label>
+            <select name="ville" id="ville">
+                <option value="">selectioner votre ville</option>
+                <option value="">bizerte</option>
+                <option value="tunis">tunis</option>
+                <option value="ariana">ariana</option>
+                <option value="jandoba">jandouba</option>
+            </select>
+            <small class="error"></small>
+        </div>
+        <button type="button" onclick="afficher()">phrase</button>
+        <div>
+            <textarea name="" id="phrase" cols="30" rows="10">
+
+            </textarea>
+            <input type="" value="">
+        </div>
+    </form>
+    <script src="control.js" async language="javascript">
+
+    </script>
+</body>
+</html>
