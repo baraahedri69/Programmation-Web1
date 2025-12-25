@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 3 - Connexion</title>
+</head>
+<body>
+
+    <h2>Formulaire de connexion</h2>
+
+    <form onsubmit="verifierConnexion(); return false;">
+        <p>
+            <label>Type d'utilisateur :</label><br>
+            <input type="radio" name="type" value="admin"> Administrateur<br>
+            <input type="radio" name="type" value="invite"> Invité
+        </p>
+
+        <p>
+            <label>Login :</label><br>
+            <input type="text" id="login">
+        </p>
+
+        <p>
+            <label>Mot de passe :</label><br>
+            <input type="password" id="password">
+        </p>
+
+        <button type="submit">Se connecter</button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
