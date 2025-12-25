@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Facture</h1>
+    <form action="">
+        <div>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom">
+            <small class="error"></small>
+        </div>
+        <div>
+            <label for="prenom">Prenom</label>
+            <input type="text" name="prenom" id="prenom">
+            <small class="error"></small>
+        </div>
+        <table>
+            <tr>
+                <th>Produit</th>
+                <th>Prix unitaire</th>
+                <th>Quantite</th>
+            </tr>
+            <tr>
+                <td>Clavier</td>
+                <td><input type="number" name="clavier_prix" id="clavier_prix"> <small class="error"></small></td>
+                <td><input type="number" name="clavier_quantite" id="clavier_quantite"> <small class="error"></small></td>
+            </tr>
+            <tr>
+                <td>Souris</td>
+                <td><input type="number" name="souris_prix" id="souris_prix"><small class="error"></small></td>
+                <td><input type="number" name="souris_quantite" id="souris_quantite"><small class="error"></small></td>
+            </tr>
+            <tr>
+                <td>Scanner</td>
+                <td><input type="number" name="scanner_prix" id="scanner_prix"><small class="error"></small></td>
+                <td><input type="number" name="scanner_quantite" id="scanner_quantite"><small class="error"></small>    </td>
+            </tr>
+        </table> 
+        <div>
+            <input type="button" value="Valider" onclick="valider()">
+            <input type="reset" value="Effacer" onclick="effacer()">
+        </div>
+    </form>
+    <table id="res" border="1"></table>
+    <script src="control.js" async></script>
+</body>
+</html>
