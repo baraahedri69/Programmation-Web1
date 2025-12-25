@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Exemple</th>
+            <th>Résultat</th>
+        </tr>
+        <tr>
+            <td>
+                <form action="">
+                    <div>
+                        <label for="x">x</label>
+                        <input type="number" name="x" id="x">
+                        <small class="error"></small>
+                    </div>
+                    <div>
+                        <label for="y">y</label>
+                        <input type="number" name="y" id="y">
+                        <small class="error"></small>
+                    </div>
+                    <div>
+                        <label for="op">Opération</label>
+                        <select name="op" id="op">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="button" value="Calculer" onclick="calculer()">
+                        <input type="reset" value="Annuler" onclick="init()">
+                    </div>
+                </form>
+            </td>
+            <td>
+                 <span id="res"></span>
+            </td>
+        </tr>
+    </table>
+    <script src="cal.js"></script>
+</body>
+</html>
